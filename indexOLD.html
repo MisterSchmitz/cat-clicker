@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+</head>
+<body>
+    <div id="cat-list">
+    </div>
+    <div>
+        <div>
+            <h1 id="cat1-name">Cat 1 Name</h1>
+            <img id="cat1" src="cat1.jpg"/>
+        </div>
+        <div>
+            <h1 id="cat2-name">Cat 2 Name</h1>
+            <img id="cat2" src="cat2.jpg"/>
+        </div>
+    </div>
+    <div>
+        <h2>Count: </h2><h2 id="count">0</h2>
+    <script>
+        var clicks = 0;
+        var cat1Name = "Mittens"
+        var cat2Name = "Timber"
+
+        var cat1 = document.getElementById('cat1');
+        var cat2 = document.getElementById('cat2');
+
+        var cat1NameElem = document.getElementById('cat1-name');
+        var cat2NameElem = document.getElementById('cat2-name');
+
+        cat1NameElem.firstChild.nodeValue = cat1Name;
+        cat2NameElem.firstChild.nodeValue = cat2Name;
+
+        cat1.addEventListener('click', clickCat, false);
+        cat2.addEventListener('click', clickCat, false);
+
+        function clickCat() {
+            clicks += 1;
+            var count = document.getElementById('count');
+            count.firstChild.nodeValue = clicks;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.cats {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cat-button {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    border: 1px;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
